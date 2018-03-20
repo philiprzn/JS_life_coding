@@ -1,14 +1,24 @@
+// function findBiggest(arr) {
+//     var max;
+//
+//     function compareNumeric(a, b) {
+//         return a - b;
+//     }
+//     arr.sort(compareNumeric);
+//
+//     return max = arr.pop();
+//
+// }
+
+
+console.log(findBiggest([45, 1, 312, 78, 45, 15, 46, 47, 48, 53, 126, 234]));
+
+
 function findBiggest(arr) {
-    var max;
-    for (var i = 0; i < arr.length; i++){
-        if (arr[i] > arr[i + 1]){
-            max = arr[i];
-        }
-    }
-    return max;
-    // var max = Math.max(arr);
-    // return max;
+
+    var max = arr.reduce(function (prev, current) {
+        return prev < current ? current : prev;
+    });
+    return max
+
 }
-
-
-console.log(findBiggest([1, 3, 7, 45, 15]));

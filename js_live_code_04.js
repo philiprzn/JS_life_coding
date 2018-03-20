@@ -1,8 +1,7 @@
 function getSum(arr) {
-    var result = 0;
-    for ( var i = 0; i < arr.length; i++){
-        result += arr[i];
-    }
+    var result = arr.reduce(function (sum, current) {
+        return sum + current;
+    }, 0);
     return result;
 }
 

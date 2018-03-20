@@ -1,9 +1,10 @@
 function powEvery(arr, num) {
 
     var newArr = [];
-    for(var i = 0; i < arr.length; i++){
-        newArr[i] = Math.pow(arr[i], num)
-    };
+
+    arr.map(function (elem, i) {
+        newArr[i] = Math.pow(arr[i], num);
+    });
 
     return newArr;
 }

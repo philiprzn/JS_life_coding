@@ -3,7 +3,6 @@ var arr2 = [4, 5, 6];
 
 function concatArr(arr1, arr2) {
     var newArr = arr1.concat(arr2);
-    // console.log(newArr);
     return newArr
 }
 

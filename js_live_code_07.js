@@ -6,7 +6,7 @@ function sortArr(arr) {
     arr.sort(compareNumeric);
 
     return arr;
-};
+}
     
 
 
