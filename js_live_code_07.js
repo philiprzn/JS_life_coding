@@ -1,10 +1,11 @@
 function sortArr(arr) {
+
     function compareNumeric(a, b) {
         return a - b;
     }
     arr.sort(compareNumeric);
 
-    return arr
+    return arr;
 };
     
 

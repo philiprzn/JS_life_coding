@@ -9,3 +9,6 @@ function powEvery(arr, num) {
 }
 
 console.log(powEvery([2, 3, 5], 3));
+
+
+/// 5 и 6 через reduce
