@@ -17,7 +17,7 @@ console.log(findBiggest([45, 1, 312, 78, 45, 15, 46, 47, 48, 53, 126, 234]));
 function findBiggest(arr) {
 
     var max = arr.reduce(function (prev, current) {
-        return prev < current ? current : prev;
+        return prev > current ? prev : current;
     });
     return max
 
